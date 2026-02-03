@@ -1,0 +1,73 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    background-color: gray;
+    border-radius: 15px;
+}
+.passar-o-mouse{
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out; 
+    border-radius: 15px;
+}
+.passar-o-mouse:hover{ 
+    background: red;
+}
+.card{
+    width: 200px;
+    height: 100px;
+    background: rgb(36, 235, 10);
+    transition: 0.9s ease-in-out;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 15px;
+    color: white;
+}
+.card:hover{
+   transform: rotate(360deg);
+}
+@keyframes piscar{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.botao-animado{
+    animation: piscar 5s infinite;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: purple;
+    color: white;
+}
+@keyframes colorido{
+    0% {background-color: brown;}
+    50%{background-color: aqua;}
+    100%{background-color: brown;}
+}
+.botao-colorido{
+    flex-direction: column;
+    display: flex;
+    margin-top: 15px;
+    animation: colorido 9s infinite;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+@keyframes girar{
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+}
+.botao-girar{
+    animation: girar 2s infinite linear;
+    margin-top: 55px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+.botao-girar:hover{
+    animation-play-state: paused;
+}
