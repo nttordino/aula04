@@ -71,3 +71,26 @@ h1{
 .botao-girar:hover{
     animation-play-state: paused;
 }
+@keyframes walk{
+    from {transform: translateX(0);}
+    to {transform: translateX(-900px);}
+}
+.walk{
+    position: relative;
+    animation: walk 5s linear infinite;
+}
+img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    flex-direction: row-reverse;
+    animation: walk 5s linear infinite;
+}
+body{
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    flex-direction: column;
+} 
+
+
