@@ -72,8 +72,21 @@ h1{
     animation-play-state: paused;
 }
 @keyframes walk{
-    from {transform: translateX(0);}
-    to {transform: translateX(-900px);}
+    0%{
+        left: 0;
+        transform: scaleX(-1);
+    }
+    50%{
+        left: 1720px;
+        transform: scaleX(-1);
+    }
+    51%{
+        transform: scaleX(1);
+    }
+    100%{
+        left: 0px;
+        transform: scaleX(1);
+    }
 }
 .walk{
     position: relative;
@@ -85,12 +98,5 @@ img{
     margin-top: 55px;
     flex-direction: row-reverse;
     animation: walk 5s linear infinite;
+    position: relative;
 }
-body{
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
-    flex-direction: column;
-} 
-
-
